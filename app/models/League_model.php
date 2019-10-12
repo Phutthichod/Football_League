@@ -1,5 +1,5 @@
 <?php
-    class Team_model extends Model{
+    class League_model extends Model{
         public function __construct() {
             parent::__construct();
             $this->table = "league";
@@ -12,7 +12,7 @@
             return $this->db->selectAll($sql);
         }
         public function deleteData($id){
-            $this->db->delete($id);
+            $this->db->delete($this->table,$id);
         }
         public function updateData( $data, $where){
             $this->db->update($this->table, $data, $where);

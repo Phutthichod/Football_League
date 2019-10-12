@@ -8,7 +8,7 @@ class MVCmanage {
 	private $_controllerPath = 'app/controllers/'; // Always include trailing slash
 	private $_modelPath = 'app/model/'; // Always include trailing slash
 	private $_errorFile = 'err.php';
-	private $_defaultFile = 'Team.php';
+	private $_defaultFile = 'League.php';
 
 
 	public function init() {
@@ -77,8 +77,8 @@ class MVCmanage {
 	private function _loadDefaultController()
 	{
 		require $this->_controllerPath . $this->_defaultFile;
-		$this->_controller = new Team();
-		$this->_controller->loadModel("Team");
+		$this->_controller = new League();
+		$this->_controller->loadModel("League");
 		// $this->_controller->loadModel("Team");
 		$this->_controller->index();
 

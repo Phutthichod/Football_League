@@ -1,0 +1,47 @@
+:root {
+    --item-color:rgb(22, 175, 221);
+  }
+h1{
+    text-align:  center;
+}
+header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.grid-section-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1 rem;
+    justify-items: center;
+}
+.grid-item{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-gap: 1 rem;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border : 1px solid green;
+}
+.btn-item{
+    width: 100%;
+    border-radius: 0;
+}
+h2{
+    width: 100%;
+    justify-self: flex-start;
+    --item-color:white;
+    color: var(--item-color);
+}
+.card{
+    background-color: #3f1052;
+}
+h2:hover{
+    --item-color:rgb(22, 175, 221);
+    cursor: pointer;
+}
+.btn-insert{
+    width: 15%;
+    height: 45px;
+    justify-self: flex-end;
+}
