@@ -11,8 +11,8 @@
             $sql = "Select * From $this->table";
             return $this->db->selectAll($sql);
         }
-        public function deleteData($id){
-            $this->db->delete($this->table,$id);
+        public function deleteData( $where){
+            $this->db->delete($this->table, $where);
         }
         public function updateData( $data, $where){
             $this->db->update($this->table, $data, $where);

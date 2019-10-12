@@ -27,7 +27,7 @@ header{
     width: 100%;
     border-radius: 0;
 }
-h2{
+.name{
     width: 100%;
     justify-self: flex-start;
     --item-color:white;
@@ -36,7 +36,7 @@ h2{
 .card{
     background-color: #3f1052;
 }
-h2:hover{
+.name:hover{
     --item-color:rgb(22, 175, 221);
     cursor: pointer;
 }
@@ -44,4 +44,11 @@ h2:hover{
     width: 15%;
     height: 45px;
     justify-self: flex-end;
+}
+.swal2-title{
+    display: block;
+}
+.swal-footer{
+    display: flex;
+    flex-direction: row-reverse;
 }

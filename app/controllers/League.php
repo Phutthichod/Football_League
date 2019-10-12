@@ -21,8 +21,9 @@
         }
         public function deleteData(){
             $id = $_POST['id'];
-            $this->data = $this->model->deleteData($id);
-            header('Location: '.URL);
+            $where = "LID = $id";
+            $this->data = $this->model->deleteData($where);
+            echo json_encode($this->getData());
         }
         public function updateData(){
             $id = $_POST['id'];
