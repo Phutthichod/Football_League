@@ -4,8 +4,8 @@
 
         }
         public function index(){
-            $this->data = $this->getData();
-            $this->location = 'Location: '.URL;
+            // $this->data = $this->getData();
+            $this->sidebar = 'staff';
             require "views/League/index.php";
         }
         public function addData(){
